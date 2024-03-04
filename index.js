@@ -35,7 +35,6 @@ const houseData = [{
 app.get('/houses', (req, res) => {
   const result = houseData.filter((house) => house.name.includes(req.query.name));
   res.send(result)
-  console.log(result)
 })
 
 app.listen(port, () => {
